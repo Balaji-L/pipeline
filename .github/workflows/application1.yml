@@ -69,7 +69,10 @@ jobs:
         # output3: ${{ steps.step1.outputs.back_end }}
       steps:
             - name: test
-              run: $GITHUB_STEP_SUMMARY = echo "### Hello world! :rocket:"
+              run: |
+                echo '### Hello world! ' >> $GITHUB_STEP_SUMMARY
+                cat $GITHUB_STEP_SUMMARY 
+              shell: bash
               # run: |
               #   {
               #     echo "### :rocket: Workflow inputs"
