@@ -74,7 +74,7 @@ jobs:
               run: |
                 # echo '### Hello world! ' >> $GITHUB_STEP_SUMMARY
                 # cat test.txt >> $GITHUB_STEP_SUMMARY
-                $GITHUB_STEP_SUMMARY="Hello"
+                $GITHUB_STEP_SUMMARY = "Hello"
               # shell: bash
               working-directory: Application1
               # run: |
